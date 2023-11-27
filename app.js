@@ -11,7 +11,7 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 
 //MongoDB
-// const dbURI = 'mongodb+srv://Seven:Awesome6@cluster0.rfsjhpk.mongodb.net/node-auth';
+// const dbURI = 'mongodb+srv://:@cluster0.rfsjhpk.mongodb.net/node-auth';
 // mongoose.connect(dbURI, {
 //     useNewUrlParser: true, 
 //     useUnifiedTopology: true, 
@@ -26,7 +26,7 @@ app.set('view engine', 'ejs');
 //   });
 
 //MongoDB
-const dbURI = 'mongodb+srv://Seven:Awesome6@cluster0.rfsjhpk.mongodb.net/node-auth';
+const dbURI = 'mongodb+srv://:@cluster0.rfsjhpk.mongodb.net/node-auth';
 
 async function main() {
   const client = new MongoClient(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
